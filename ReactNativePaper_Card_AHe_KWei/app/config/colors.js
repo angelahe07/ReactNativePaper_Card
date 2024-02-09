@@ -1,0 +1,20 @@
+export default{
+    yellow: "#fff091",
+    blue: "#5870f5",
+    red: "#bf4939",
+    pink: "#ffc0b8",
+    purple: "#9e82fa",
+    textColor: "#2c2b36",
+    underlayColor: "#f5e4f3",
+    buttonBorderColor: "#678779",
+    buttonBackgroundColor: "#eaffc4",
+    lightBlue: "#99c1f7",
+    darkPink: "#c920b6",
+    darkYellow: "#aba80a",
+    lightRed: "#ffb5b5",
+    darkPurple: "#4c1673",
+    lightPurple: "#d5a7db",
+    darkBlue: "#2918b5",
+    lightYellow: "#fffbc7",
+    lightPink: "#ffe6fe"
+}
