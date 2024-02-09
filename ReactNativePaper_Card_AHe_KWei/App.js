@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Avatar, Button, Card, Text } from "react-native-paper";
+import { Avatar, Button, Card, Text} from "react-native-paper";
 import { View, Image } from "react-native";
 
 const LeftContent = (props) => <Avatar.Icon {...props} icon="folder" />;
@@ -11,7 +11,7 @@ const users = [
   },
 ]
 
-export default function MyComponent() {
+export default function App() {
 
   return (
     <View>
@@ -34,19 +34,18 @@ export default function MyComponent() {
 
       <Card>
         <Card.Title>CARD WITH DIVIDER</Card.Title>
-        <Card.Divider />
-        {users.map((u, i) => {
-            <View key={i} /*style={styles.user}*/>
-              <Image
-              style={{ width: 50, height: 50 }} // You can adjust the width and height as per your requirement
-              resizeMode="cover"
-              source={{ uri: u.avatar }}
-              />
-              <Text /*style={styles.name}*/>{u.name}</Text>
-            </View>
-          
-        })}
-      </Card>
+        <Card.Content>
+          <Text variant="titleLarge">Card title</Text>
+          <Text variant="bodyMedium">Card content</Text>
+        </Card.Content>
+        <Card.Cover source={require('./app/assets/travel.jpg')}/>
+        {/* <Card.Divider /> */}
+        <Card.Actions>
+          <Button>Cancel</Button>
+          <Button>Ok</Button>
+        </Card.Actions>
+      
+    </Card>
     </View>
   );
-}
+  }
