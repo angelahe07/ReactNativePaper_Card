@@ -22,6 +22,7 @@ const onPressCard = () => {
 
 const onLongPressCard = (placeName) => {
   Alert.alert("Love this place?", "You have saved and liked " + placeName);
+  console.log("onLongPress")
 }
 export default function App() {
 
